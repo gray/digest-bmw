@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Test::More tests => 8;
+use Test::More tests => 11;
 use Digest::BMW;
 
 new_ok('Digest::BMW' => [$_], "algorithm $_") for qw(224 256 384 512);
@@ -12,6 +12,10 @@ can_ok('Digest::BMW',
     qw(clone algorithm hashsize add digest hexdigest b64digest)
 );
 
-my $d1 = Digest::BMW->new(224);
-is($d1->add('foobar')->digest, $d1->clone->digest, 'clone');
-
+for my $alg (qw(224 256 384 512)) {
+    my $d1 = Digest::BMW->new($alg);
+    is(
+        $d1->add('foobar')->hexdigest, $d1->clone->hexdigest,
+        "clone of $alg"
+    );
+}
