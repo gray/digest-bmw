@@ -151,6 +151,7 @@ Returns the algorithm used by the object.
 L<Digest>
 
 L<http://www.q2s.ntnu.no/sha3_nist_competition/>
+
 L<http://en.wikimedia.org/wikipedia/en/wiki/SHA-3>
 
 L<http://www.saphir2.com/sphlib/>
