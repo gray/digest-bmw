@@ -152,7 +152,7 @@ L<Digest>
 
 L<http://www.q2s.ntnu.no/sha3_nist_competition/>
 
-L<http://en.wikimedia.org/wikipedia/en/wiki/SHA-3>
+L<http://en.wikipedia.org/wiki/NIST_hash_function_competition>
 
 L<http://www.saphir2.com/sphlib/>
 
