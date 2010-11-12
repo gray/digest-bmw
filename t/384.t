@@ -22,7 +22,7 @@ while (my $line = <DATA>) {
     }
 
     my $md = Digest::BMW->new(384)->add_bits($data, $len)->hexdigest;
-    is($md, $digest, "new/add_bits/hexdigest: $msg");
+    is($md, $digest, "new/add_bits/hexdigest: $len bits of $msg");
 }
 continue { $len++ }
 
