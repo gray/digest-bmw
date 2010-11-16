@@ -75,8 +75,8 @@ Digest::BMW - Perl interface to the Blue Midnight Wish digest algorithm
     use Digest::BMW qw(bmw_256 bmw_256_hex bmw_256_base64);
 
     $digest = bmw_256($data);
-    $digest = bmw_hex_256($data);
-    $digest = bmw_base64_256($data);
+    $digest = bmw_256_hex($data);
+    $digest = bmw_256_base64($data);
 
     # Object-oriented interface
     use Digest::BMW;
