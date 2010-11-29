@@ -25,33 +25,6 @@ our @EXPORT_OK = qw(
     bmw_512 bmw_512_hex bmw_512_base64
 );
 
-# TODO: convert to C.
-sub bmw_224_hex  { unpack 'H*', bmw_224(@_) }
-sub bmw_256_hex  { unpack 'H*', bmw_256(@_) }
-sub bmw_384_hex  { unpack 'H*', bmw_384(@_) }
-sub bmw_512_hex  { unpack 'H*', bmw_512(@_) }
-
-sub bmw_224_base64 {
-    my $b64 = MIME::Base64::encode(bmw_224(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub bmw_256_base64 {
-    my $b64 = MIME::Base64::encode(bmw_256(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub bmw_384_base64 {
-    my $b64 = MIME::Base64::encode(bmw_384(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub bmw_512_base64 {
-    my $b64 = MIME::Base64::encode(bmw_512(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-
 sub add_bits {
     my ($self, $data, $bits) = @_;
     if (2 == @_) {
