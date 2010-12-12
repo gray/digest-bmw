@@ -64,8 +64,8 @@ Digest::BMW - Perl interface to the Blue Midnight Wish digest algorithm
 =head1 DESCRIPTION
 
 The C<Digest::BMW> module provides an interface to the Blue Midnight Wish
-message digest algorithm. Blue Midgnight Wish is a candidate in the NIST
-SHA-3 competition.
+message digest algorithm. BMW was a candidate in the NIST SHA-3 competition
+but did progress beyond round 2.
 
 This interface follows the conventions set forth by the C<Digest> module.
 
