@@ -9,8 +9,9 @@ my %conf = (
     VERSION_FROM  => 'lib/Digest/BMW.pm',
     ABSTRACT_FROM => 'lib/Digest/BMW.pm',
     PREREQ_PM => {
-        Digest         => 0,
-        parent         => 0,
+        Digest   => 0,
+        XSLoader => 0,
+        parent   => 0,
     },
     BUILD_REQUIRES => { 'Test::More' => 0.82, },
     META_MERGE     => {
